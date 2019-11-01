@@ -13,45 +13,43 @@ function Header() {
 
     // setup elements
 
-    const header1 = document.createElement('div')
+    const header = document.createElement('div');
 
-    const date = document.createElement('span')
+    const date1 = document.createElement('span');
 
-    const heading = document.createElement('h1')
+    const heading = document.createElement('h1');
 
-    const temp = document.createElement('span')
+    const temp = document.createElement('span');
 
     // set content
 
-    date.textContent = 'SMARCH 28, 2019',
+    date1.textContent = `Smarch 28, 2019`;
 
-    heading.textContent = 'Lambda Times',
+    heading.textContent = `Lambda Times`;
 
-    temp.textContent = '98°'
+    temp.textContent = `98°`
 
     // setup structure of elements
 
-    headerContainer.appendChild(header1)
+    header.appendChild(date1);
 
-    header1.appendChild(date)
+    header.appendChild(heading);
 
-    header1.appendChild(heading)
-
-    header1.appendChild(temp)
+    header.appendChild(temp);
 
     // setup class names
 
-    header1.classList.add('.header')
+    header.classList.add('.header');
 
-    date.classList.add('.date')
+    date1.classList.add('.date');
 
     temp.classList.add('.temp')
 
     // return header
     
-    return header1
+    return header;
 }
 
-const headerContainer = document.querySelector('.header-container')
+const headerContainer = document.querySelector('.header-container');
 
-Header();
+headerContainer.appendChild(Header());
