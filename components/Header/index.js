@@ -39,11 +39,11 @@ function Header() {
 
     // setup class names
 
-    header.classList.add('.header');
+    header.classList.add('header');
 
-    date1.classList.add('.date');
+    date1.classList.add('date');
 
-    temp.classList.add('.temp')
+    temp.classList.add('temp')
 
     // return header
     
